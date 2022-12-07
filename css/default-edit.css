@@ -12,6 +12,11 @@
     border-radius: 0px;
     color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.default-button:hover {
+    color: #fff;
+    background: #003cff;
 }
 /* ========== buttons-end ========== */
 
