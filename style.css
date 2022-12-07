@@ -262,6 +262,19 @@ p:last-child{
 .table_str1 td {
   font-size: 16px;
   padding: 5px;
+  position: relative;
+}
+.table_str1 td:nth-child(even)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
+  z-index: -1;
+  background: #fff;
 }
 .table_str1 tr::after {
   border-top-color: #DCDEE7;
@@ -270,9 +283,9 @@ p:last-child{
 .table_str1 tbody tr:last-child:after {
   border-bottom-color: #DCDEE7;
 }
-.table_str1 td:nth-child(even) {
+/* .table_str1 td:nth-child(even) {
   background: #fff;
-}
+} */
 .table_str1 tbody tr:hover::after {
   border-color: var(--theme__color1);
   background: rgba(1, 124, 255, 0.1);
