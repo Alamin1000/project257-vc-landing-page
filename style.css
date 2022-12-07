@@ -98,8 +98,8 @@ p:last-child{
   margin: 0 0 27px;
   font-family: var(--poppins);
 }
-.h3 {
-  font-size: 38px;
+.h3b {
+  font-size: 25px;
   margin: 0 0 18px;
 }
 .cont_blk {
@@ -190,11 +190,237 @@ p:last-child{
 
 /* ========== table-section ========== */
 .table-section {
+  padding: 60px 0;
   background: #F3F5F9;
+}
+.table-section__inner {
+
+}
+.table-section__title {
+  margin: 0 0 50px;
+}
+.table__ticks-row {
+  margin: 24px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
+  flex-wrap: wrap;
+}
+.table-tick__single {
+  font-size: 16px;
+  color: #A4A8C0;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.table-tick__single .table-tick {
+  margin: 0 11px 0 0;
+}
+.table-tick {
+  height: 24px;
+  width: 24px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: var(--theme__color1);
+  color: #fff;
+  border-radius: 50%;
+}
+.table-tick.table-tick--theme2 {
+  background: var(--theme__color2);
+}
+
+.table__main {
+
+}
+.table_str1 {
+
+}
+.table_str1 tr {
+  border-bottom: 1px solid blue;
+  position: relative;
+  z-index: 1;
+}
+.table_str1 tr::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  z-index: -1;
+}
+.table_str1 table {
+
+}
+.table_str1 td {
+  font-size: 16px;
+  padding: 5px;
+}
+.table_str1 tr::after {
+  border-top-color: #DCDEE7;
+  border-right-color: #DCDEE7;
+}
+.table_str1 tbody tr:last-child:after {
+  border-bottom-color: #DCDEE7;
+}
+.table_str1 td:nth-child(even) {
+  background: #fff;
+}
+.table_str1 tbody tr:hover::after {
+  border-color: var(--theme__color1);
+  background: rgba(1, 124, 255, 0.1);
+}
+.table_str1 tbody tr:hover + tr::after {
+  border-top-color: transparent;
+}
+
+.table_str1 thead td {
+  padding: 15px 10px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.3;
+}
+.tbl-logo {
+
+}
+.tbl-logo .image {
+
+}
+.tbl-logo .image img {
+  height: 50px;
+  margin: 0 0 8px;
+}
+.tbl-logo .logo-title {
+  font-weight: 600;
+  font-style: italic;
+  color: #A9ADC4;
+}
+.tb-check-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tb-check-box .table-tick {
+  height: 28px;
+  width: 28px;
+  font-size: 16px;
+}
+.table_str1--1 {
+  overflow: auto;
+}
+.table_str1--1 table {
+	min-width: 730px;
+}
+.table_str1--1 td {
+	width: 20%;
+	height: 100px;
+}
+.table_str1--1 td:first-child {
+  width: 300px;
 }
 /* ========== table-section-end ========== */
 
 
-/* ========== section ========== */
+/* ========== process-section ========== */
+.process-section {
+  padding: 60px 0;
+}
+.process-section__inner {
 
-/* ========== section-end ========== */
+}
+
+.process-section__title {
+  margin: 0 0 12px;
+}
+
+.process__cont-wrap {
+  --bs-gutter-x: 60px;
+  --bs-gutter-y: var(--bs-gutter-x);
+}
+.process__column {
+
+}
+.process__column h3 {
+  font-size: 24px;
+  margin: 0 0 17px;
+  color: var(--theme__color1);
+}
+.process__column p {
+  color: #000;
+} 
+/* ========== process-section-end ========== */
+
+
+/* ========== we-section ========== */
+.we-section {
+  padding: 80px 0;
+  background: #F3F5F9;
+}
+.we-section__inner {
+
+}
+
+.we__mrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.we__mrow__left {
+  width: 49%;
+}
+.we__mrow__left .cont_blk_title {
+  margin: 0 0 18px;
+}
+.we__mrow__left .cont_blk_cont {
+  padding-right: 60px;
+}
+.we__mrow__right {
+  width: 43%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.we__mrow__right img {
+
+}
+
+.arr-ul {
+
+}
+.arr-ul li {
+  padding-left: 27px;
+  margin: 0 0 26px;
+  position: relative;
+}
+.arr-ul li::before {
+  content: '\f178';
+  font-family: "Font Awesome 5 Pro";
+  color: var(--theme__color1);
+  font-weight: 700;
+  position: absolute;
+  top: 0px;
+  left: 0;
+} 
+/* ========== we-section-end ========== */
+
+
+/* ========== cta-b-section ========== */
+.cta-b-section {
+  padding: 60px 0;
+}
+.cta-b-section__inner {
+
+}
+
+.cta-b__content {
+  text-align: center;
+}
+.cta-b__content .bottom-button {
+  margin: 6px 0 0;
+}
+/* ========== cta-b-section-end ========== */
