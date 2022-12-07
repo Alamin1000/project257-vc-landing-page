@@ -1,0 +1,200 @@
+/*-----------------------------------=========Main-Style-Sheet=========----------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+:root {
+  --theme__color1: #017CFF;
+  --theme__color2: #5FC2DC;
+  --openSans: 'Open Sans', sans-serif;
+  --poppins: 'Poppins', sans-serif;
+}
+*,::before,::after {
+  box-sizing: border-box;
+}
+body {
+  font-size: 19px;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #505369;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  word-break: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--openSans);
+}
+a, a:active, a:focus, a:active, a:hover {
+  text-decoration:none !important;
+  color: inherit;
+}
+input{
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a:hover,
+a:focus,
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+select:active,
+textarea:focus,
+textarea:hover,
+button:focus {
+  outline: none;
+}
+::placeholder {
+  opacity: 1;
+}
+:focus::placeholder {
+  opacity: 0;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed; /* Prevents HTML tables from becoming too wide */
+  width: 100%;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+iframe {
+  width: 100%;
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  font-weight: 700;
+  color: #12111A;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p{
+  margin-bottom: 13px;
+}
+p:last-child{
+  margin: 0;
+}
+.main-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1150px;
+  }
+}
+
+
+/* ========== common-content ========== */
+.h2 {
+  font-size: 38px;
+  margin: 0 0 27px;
+  font-family: var(--poppins);
+}
+.h3 {
+  font-size: 38px;
+  margin: 0 0 18px;
+}
+.cont_blk {
+  display: flex;
+  flex-direction: column;
+}
+.cont_blk--center {
+  align-items: center;
+  text-align: center;
+}
+/* ========== common-content-end ========== */
+
+
+/* ========== hero-section ========== */
+.hero-section {
+  padding: 170px 0 65px;
+  background: url('images/hero-bg.png') no-repeat center center/cover, #020202;
+  color: #fff;
+}
+.hero-section__inner {
+
+}
+.hero__content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__content .h1 {
+  font-size: 45px;
+  margin: 0 0 27px;
+  color: #fff;
+}
+.hero__content p {
+  font-weight: 500;
+  line-height: 1.35;
+  color: #9B9FB4;
+}
+.hero__content .bottom-button {
+  margin: 15px 0 0;
+}
+/* ========== hero-section-end ========== */
+
+
+/* ========== chart-section ========== */
+.chart-section {
+  padding: 80px 0;
+}
+.chart-section__inner {
+
+}
+
+.chart__mrow {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chart__mrow__left {
+  width: 417px;
+}
+.chart__mrow__left .cont-blk {
+
+}
+.chart__mrow__right {
+
+}
+.chart__pai-content {
+  display: flex;
+  align-items: center;
+}
+.chart__pai-content .image-pai {
+  margin: 0 10px 0 0;
+}
+.chart__pai-content .content-pai {
+  max-width: 300px;
+  padding: 0 0 65px;
+}
+.chart__pai-content .content-pai h3 {
+  font-size: 27px;
+  margin: 0 0 25px;
+}
+.chart__pai-content .content-pai p {
+  margin: 0 0 10px;
+}
+/* ========== chart-section-end ========== */
+
+
+/* ========== table-section ========== */
+.table-section {
+  background: #F3F5F9;
+}
+/* ========== table-section-end ========== */
+
+
+/* ========== section ========== */
+
+/* ========== section-end ========== */
